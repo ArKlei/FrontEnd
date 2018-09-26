@@ -1,0 +1,63 @@
+body
+{
+    background-color:white;
+}
+
+img {
+    transition: transform 0.5s ease;
+    width:90%;
+
+}
+img:active {
+    transform: scale(3);
+
+/* Table */
+table {
+    margin: 10px;
+    width: 67%;
+    text-align: center;
+}
+
+.one {
+    column-width:20%;
+    text-align: center;
+}
+
+.two {
+    column-width:20%;
+    text-align: center;
+}
+
+.three {
+    column-width:20%;
+    text-align: center;
+}
+
+.four {
+    column-width:20%;
+    text-align: center;
+    col
+}
+
+.five {
+    column-width:20%;
+    text-align: center;
+}
+
+.six {
+   column-width: 100%;
+}
+
+#one {
+    column-width:40%;
+    align: center;
+}
+
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    background-color: white;
+    padding:15px;
+}
+
