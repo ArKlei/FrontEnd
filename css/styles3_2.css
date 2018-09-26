@@ -1,0 +1,12 @@
+body
+{
+    background-color:white;
+}
+
+#first {
+
+    border: 30px solid blue;
+    border-collapse: collapse;
+    background-color: blue;
+    padding:30px;
+}
