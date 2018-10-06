@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css6.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Jane & John Wedding</title>
+</head>
+<body>
+
+<!-- Header -->
+<header class="wide bgimg" id="home">
+    <div id="text-white">
+        <h1>Jane & John</h1>
+        <h3>Are getting married</h3>
+        <h3>17.07.2017</h3>
+    </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<nav>
+    <ul>
+        <a href="#home">
+            <li>Home</li>
+        </a>
+        <a href="#us">
+            <li>Jane & John</li>
+        </a>
+        <a href="#wedding">
+            <li>Wedding</li>
+        </a>
+        <a href="#rsvp" id="hover-black">
+            <li>RSVP</li>
+        </a>
+    </ul>
+</nav>
+
+<!-- Section-->
+<section id="us">
+    <!--Section1-->
+    <div class="section1">
+        <h2 class="text-grey">Jane & John</h2>
+    </div>
+    <!--Section2-->
+    <div id="section2">
+    </div>
+    <!-- Section3-->
+    <div id="section3">You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <!-- Section4-->
+    <div id="Section4">
+        <a href="#wedding">
+            <button>Wedding Details</button>
+        </a>
+    </div>
+    <!-- Section5-->
+    <div class="wide" id="bgimg2">
+        <div id="text-white2">
+            <h1>You Are Invited</h1>
+            <p>
+            <h3>Of course..</h3>
+        </div>
+    </div>
+    <!-- Section6 -->
+    <div class="section6" id="wedding">
+        <h2 class="text-grey">THE WEDDING</h2>
+    </div>
+    <!--Section7-->
+    <div id="section7">
+    </div>
+    <!-- Section8-->
+    <div id="section8">
+        <aside><p id="aside_top">When</p>
+            <p class="aside_bottom" id="rsvp">Wedding Ceremony - 2:00pm</p>
+            <p class="aside_bottom">Reception & Dinner - 5:00pm</p></aside>
+        <main><p id="main_top">Where</p>
+            <p class="main_bottom">Some place, an address</p>
+            <p class="main_bottom">Some where, some address</p></main>
+    </div>
+    <!-- Section9-->
+    <div id="section9">
+        <p style="font-size:36px;">HOPE YOU CAN MAKE IT!</p>
+        <p style="font-size:18px; line-height:2.5;">Kindly Respond By January, 2017</p>
+        <a href="#rsvp">
+            <button class="RSVP" id="myBtn">RSVP</button>
+        </a>
+    </div>
+    <footer>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" id="w3css">w3.css</a></p>
+    </footer>
+    <!-- Trigger/Open The Modal -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p style="font-size:2.5em; letter-spacing: 4px;">CAN YOU COME?</p>
+            <br>
+            <p style="font-size:1em;">We really hope you can make it.</p>
+            <form>
+                <input type="text" name="firstname" placeholder="Name(s)"><br>
+            </form>
+            <p style="font-style: italic;">Sincerely, John & Jane</p>
+            <div class="close">
+                <div id="going">Going</div>
+                <div id="Cant_come">Can't come</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <div> element that closes the modal
+    var div = document.getElementsByClassName("close")[0];
+
+    // Get the <div> element that closes the modal
+    var div = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <div>, close the modal
+    div.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
