@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="JS1.css">
+    <title>Stačiakampio parametrų skačiuoklė</title>
+   </head>
+<body>
+
+<div id="container">
+    <br>Apskaičiuokite stačiakampio parametrus
+        <div id="top">
+        <div id="duomenys">
+            <br>
+            Įveskite išeities duomenis:
+            <form>
+                <br>Stačiakampio plotis, cm
+                <br><input type="text" id="plotis" name="1x" placeholder="bet kokie skaičiai" value="">
+                <br>Stačiakampio ilgis, cm
+                <br><input type="text" id="ilgis" name="2x" placeholder="bet kokie skaičiai" value="">
+            </form>
+        </div>
+        <div id="rezultatas">
+            <br>Stačiakampio plotas, cm
+            <br>
+            <div id="plotas" class="outputs"></div>
+            <br>Stačiakampio perimetras, cm
+            <br>
+            <div id="perimetras" class="outputs"></div>
+            <br>Įstrižainės ilgis, cm
+            <br>
+            <div id="pythagorean" class="outputs"></div>
+        </div>
+        <button type="button" onclick="plotas(); perimetras(); pythagorean()">Skaičiuoti</button>
+    </div>
+    <script>
+        var x = 4;
+        var y = 3;
+
+        function plotas() {
+            document.getElementById("plotas").innerHTML = x * y;
+        }
+    </script>
+    <script>
+        function perimetras() {
+            document.getElementById("perimetras").innerHTML = 2 * x + 2 * y;
+        }
+    </script>
+    <script>
+        function pythagorean() {
+            document.getElementById("pythagorean").innerHTML = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+        }
+    </script>
+</body>
+</html>
