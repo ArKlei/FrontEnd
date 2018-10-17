@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="JS1.css">
     <title>Stačiakampio parametrų skačiuoklė</title>
-   </head>
+</head>
 <body>
 
 <div id="container">
-    <br>Apskaičiuokite stačiakampio parametrus
-        <div id="top">
+    <br>Apskaičiuojami stačiakampio parametrai
+    <div id="top">
         <div id="duomenys">
             <br>
-            Įveskite išeities duomenis:
-            <form>
+            Išeities duomenis:
+            <form onSubmit="return false;">
                 <br>Stačiakampio plotis, cm
-                <br><input type="text" id="plotis" name="1x" placeholder="bet kokie skaičiai" value="">
+                <br><input type="number" id="x" step="0.01">
                 <br>Stačiakampio ilgis, cm
-                <br><input type="text" id="ilgis" name="2x" placeholder="bet kokie skaičiai" value="">
+                <br><input type="number" id="y" step="0.01">
             </form>
         </div>
         <div id="rezultatas">
@@ -31,24 +31,22 @@
             <br>
             <div id="pythagorean" class="outputs"></div>
         </div>
-        <button type="button" onclick="plotas(); perimetras(); pythagorean()">Skaičiuoti</button>
+        <button type="button" onclick="perimetras(); plotas(); pythagorean ();">Skaičiuoti</button>
     </div>
     <script>
-        var x = 4;
-        var y = 3;
+        var xElm = document.getElementById("x");
+        var yElm = document.getElementById("y");
+
+        function perimetras() {
+            document.getElementById("perimetras").innerHTML = parseFloat(parseFloat(xElm.value) + parseFloat(xElm.value) + parseFloat(yElm.value) + parseFloat(yElm.value)).toFixed(2);
+        }
 
         function plotas() {
-            document.getElementById("plotas").innerHTML = x * y;
+            document.getElementById("plotas").innerHTML = parseFloat(parseFloat(xElm.value) * parseFloat(yElm.value)).toFixed(2);
         }
-    </script>
-    <script>
-        function perimetras() {
-            document.getElementById("perimetras").innerHTML = 2 * x + 2 * y;
-        }
-    </script>
-    <script>
+
         function pythagorean() {
-            document.getElementById("pythagorean").innerHTML = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+            document.getElementById("pythagorean").innerHTML = parseFloat(Math.sqrt(Math.pow((xElm.value), 2) + Math.pow((yElm.value), 2))).toFixed(2);
         }
     </script>
 </body>
